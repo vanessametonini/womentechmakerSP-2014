@@ -91,7 +91,7 @@
             <a href="#">Novo Hackathon </a>
           </li>
         <li >
-            <a href="#"><?php echo $_POST['email']?></a>
+            <a href="#"><?php echo $_POST['login']?></a>
           </li>          
           
         </ul>
