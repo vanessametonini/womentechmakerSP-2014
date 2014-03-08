@@ -3,8 +3,9 @@
 <html>
   
   <head>
-    <title>Narrow Jumbotron</title>
+    <title>BYHG - Lista de hackathons</title>
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
@@ -84,29 +85,49 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-        <li>
+          <li class="active">
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Novo Hackathon </a>
+            <a href="#">Criar</a>
           </li>
-        <li >
-            <a href="#"><?php echo $_POST['login']?></a>
-          </li>          
-          
         </ul>
         <h3 class="text-muted">BYHG</h3>
       </div>
       <div class="jumbotron">
-        <form action="lista.php" method="post">
-          <input class="form-control input-lg" placeholder="Encontrar hackathon..." type="text" name="busca">
-               <button class="btn btn-lg btn-primary btn-block" type="submit">Procurar</button>
-        </form>
-       
-        
-        
+      <h2> Resultado da sua pesquisa por: <?php echo $_POST['busca']?></h2>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Hackathon</th>
+               <th>Local</th>
+                <th>Link</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08/03/2014</td>
+              <td>Women TechMakers</td>
+              <td>São Paulo-Brasil</td>
+              <td><a href="listatags.html">Women TechMakers</a></td>
+            </tr>
+            <tr>
+              <td>08/03/2014</td>
+              <td>Women TechMakers</td>
+              <td>Nigeria</td>
+              <td><a href="listatags.html">Women TechMakers</a></td>
+            </tr>
+            <tr>
+              <td>22/03/2014</td>
+              <td>API Hack Day</td>
+              <td>São Paulo-Brasil</td>
+              <td><a href="listatags.html">API Hack Day</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-     
       <div class="footer">
         <p>&copy; WTM 2014 - @nessaguedes, @vanessatonini, @thamarahessel</p>
       </div>
